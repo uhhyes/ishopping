@@ -1,0 +1,330 @@
+@charset "utf-8";
+/********************筛选商品*******************/
+.select>div {
+	border: 1px solid rgb(221, 221, 221);
+	position: relative;
+	background-color: #fff;
+}
+.select li,
+.select .tips {
+	font-size: 13px;
+	color: #2b2b2b;
+	line-height: 54px;
+}
+.select li ul,
+.select li li {
+	float: left;
+	height: 54px;
+}
+.select li.hide {
+	display: none;
+}
+.select li ul {
+	border-bottom: 1px solid rgb(221, 221, 221);
+}
+.select li:nth-child(9) ul {
+	border-bottom: none;
+}
+.select li.value {
+	padding: 0 20px;
+}
+.select li.value:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.select li>div {
+	float: left;
+}
+.select li ul {
+	width: 1151px;
+	padding: 0 12px 0 15px;
+}
+/*******************条件名称********************/
+.select li .title {
+	width: 60px;
+	text-align: left;
+	line-height: 52px;
+	padding: 0 15px 0 25px;
+	border: 1px solid rgb(221, 221, 221);
+	border-left: none;
+}
+.select li .title.noborder {
+	border-bottom: none;
+}
+/******************商品总数*******************/
+.select ul.goodsnum li {
+}
+.select ul.goodsnum li:before {
+	content: "共";
+	margin-left: 20px;
+}
+.select ul.goodsnum li:after {
+	content: "个商品";
+}
+/****************品牌***************/
+.select ul.brand li{
+	height: 55px;
+	text-align: center;
+}
+.select ul.brand li:hover {
+	cursor: pointer;
+	box-shadow: 0 0 2px 2px #ccc;
+}
+.select ul.brand li img {
+	vertical-align: middle;
+}
+/****************更多/多选***************/
+.select ul.clearfix .more div,
+.select ul.clearfix .moreselect div {
+	box-sizing: border-box;
+	width: 53px;
+	height: 21px;
+	line-height: 20px;
+	border-radius: 4px;
+	margin-top: 17px;
+}
+.select ul.clearfix .more,
+.select ul.clearfix .moreselect {
+	width: 55px;
+	float: right;
+}
+.select ul.clearfix .more:hover,
+.select ul.clearfix .moreselect:hover {
+	box-shadow: none;
+}
+.select ul.clearfix .more div{
+	float: right;
+	color: #797979;
+	text-align: left;
+	margin-right: 18px;
+	padding-left: 4px;
+	width: 50px;
+	background: url(../img/more.png) 32px 4px no-repeat;
+}
+.select ul.clearfix .more div:hover {
+	cursor: pointer;
+	border: 1px solid #797979;
+	background: url(../img/more2.png) 32px 3px no-repeat;
+}
+.select ul.clearfix .moreselect div {
+	text-align: right;
+	padding-right: 4px;
+	border: 1px solid #797979;
+	background: url(../img/add.png) 3px 2px no-repeat;
+}
+.select ul.clearfix .moreselect div:hover {
+	cursor: pointer;
+	border: 1px solid #555;
+}
+/*******************选择价格*******************/
+.select .selectprice li input {
+	width: 50px;
+	height: 20px;
+	border-radius: 4px;
+	border: 1px solid #777;
+	text-indent: 4px;
+}
+.select .selectprice li input:first-child {
+	margin-left: 15px;
+}
+.select .selectprice li span{
+	display: inline-block;
+	line-height: 22px;
+	padding: 0 10px;
+	margin-left: 8px;
+	border-radius: 4px;
+	background-color: rgb(240, 240, 240);
+}
+.select .selectprice li span:hover {
+	cursor: pointer;
+	background-color: rgb(220, 220, 220);
+}
+/*****************查看更多条件*****************/
+.select .tips {
+	position: absolute;
+	bottom: -28px;
+	left: 50%;
+	margin-left: -145px;
+	padding: 0 20px 0 20px;
+	line-height: 28px;
+	border-radius: 0 0 8px 8px;
+	background-color: #fff;
+}
+.select .tips img {
+	vertical-align: middle;
+	margin: -3px 0 0 7px;
+}
+.select .tips:hover {
+	cursor: pointer;
+	box-shadow: 0 0 2px #789;
+}
+
+/******************符合条件的商品*******************/
+.goodsplace {
+	padding-top: 48px;
+}
+.goodsplace>div {
+	border-radius: 8px 8px 0 0;
+}
+/***********推荐商品***********/
+.goodsplace .othergoods {
+	float: left;
+	width: 232px;
+	height: 1331px;
+	font-size: 18px;
+	color: #333;
+	border-radius: 8px 8px 0 0;
+	background-color: #fff;
+}
+.goodsplace .othergoods .title {
+	line-height: 58px;
+	padding-left: 18px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.goodsplace .othergoods .goodscontent>li {
+	padding: 20px 0 10px 0;
+	width: 232px;
+	border: 1px solid rgb(238, 238, 238);
+	border-left: none;
+	border-right: none;
+}
+.goodsplace .othergoods .goodscontent>li:last-child {
+	border: none;
+}
+/***********符合条件的商品区域的标题***********/
+.goodsplace .needgoods {
+	float: right;
+	width: 1040px;
+	border-radius: 8px 8px 0 0;
+	background-color: #fff;
+}
+.goodsplace .needgoods .title {
+	line-height: 58px;
+	border-radius: 8px 8px 0 0;
+	border-bottom: 2px solid rgb(255, 198, 110);
+}
+.goodsplace .needgoods .title>div.type{
+	float: left;
+	padding: 0 26px;
+	font-size: 16px;
+	color: #797979;
+}
+.goodsplace .needgoods .title>div.type:first-child {
+	border-radius: 8px 0 0 0;
+	color: #fff;
+}
+.goodsplace .needgoods .title>div.type:hover {
+	background-color: rgb(255, 198, 110);
+	color: #fff;
+	cursor: pointer;
+}
+.goodsplace .needgoods .goodsnum {
+	float: right;
+	font-size: 12px;
+	color: #797979;
+}
+.goodsplace .needgoods .goodsnum:before {
+	content: "共";
+}
+.goodsplace .needgoods .goodsnum:after {
+	content: "个商品";
+}
+.goodsplace .next,
+.goodsplace .prev {
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-top: 19px;
+	border-radius: 50%;
+}
+.goodsplace .prev {
+	background: url(../img/shangpinshangyiye.png) 5px 4px no-repeat;
+	background-color: #797979;
+}
+.goodsplace .next {
+	background: url(../img/shangpinxiayiye.png) 2px 4px no-repeat;
+	background-color: #f90;
+}
+.goodsplace .nowpage {
+	float: right;
+	font-size: 12px;
+	color: #f90;
+}
+.goodsplace .needgoods .allpage {
+	float: right;
+	font-size: 12px;
+	color: #797979;
+}
+.goodsplace .needgoods .allpage:before {
+	content: "/";
+}
+.goodsplace .needgoods .goodsnum,
+.goodsplace .needgoods .allpage,
+.goodsplace .needgoods .prev,
+.goodsplace .needgoods .next {
+	margin-right: 20px;
+}
+.goodsplace .prev:hover {
+	cursor: pointer;
+	background-color: #ccc;
+}
+.goodsplace .next:hover {
+	cursor: pointer;
+	background-color: orange;
+}
+/***********符合条件的商品列表***********/
+.goodsplace .needgoods .goodscontent:last-of-type {
+	display: none;
+}
+.goodsplace .needgoods .goodscontent li{
+	width: 260px;
+	border: 1px solid rgb(238, 238, 238);
+	border-top: none;
+	padding: 20px 0;
+}
+.goodsplace .needgoods .goodscontent>li:nth-child(4n+4) {
+	border-right: 1px solid #fff;
+}
+.goodsplace .needgoods .goodscontent .btn {
+	width: 208px;
+	margin:0 auto;
+}
+.goodsplace .needgoods .goodscontent .addshopcart,
+.goodsplace .needgoods .goodscontent .buy {
+	float: left;
+	text-align: center;
+	width: 99px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 8px;
+}
+.goodsplace .needgoods .goodscontent .addshopcart {
+	border: 1px solid #aaa;
+	color: #aaa;
+}
+.goodsplace .needgoods .goodscontent .buy {
+	color :#fff;
+	background-color: rgb(255, 198, 110); 
+	margin-left: 8px;
+}
+.goodsplace .needgoods .goodscontent .addshopcart:hover {
+	cursor: pointer;
+	background-color: rgb(240, 240 ,240);
+}
+.goodsplace .needgoods .goodscontent .buy:hover {
+	cursor: pointer;
+	background-color: orange;
+}
+/********************猜你喜欢********************/
+.guessyoulike {
+	padding: 15px 0 30px 0;
+}
+.guessyoulike .goodscontent {
+	padding-top: 20px;
+}
+.guessyoulike .goodscontent li {
+	border-right: 1px solid rgb(238, 238, 238);
+}
+.guessyoulike .goodscontent li:nth-child(5n+5) {
+	border-right: none;
+}

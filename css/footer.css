@@ -1,0 +1,157 @@
+@charset "utf-8";
+.footer .aftermarket {
+	padding: 20px 0 15px;
+	font-size: 0;
+	border-bottom: 1px solid #ccc;
+}
+.footer .aftermarket li {
+	vertical-align: top;
+	box-sizing: border-box;
+	width: 25%;
+	text-align: center;
+	color: #333;
+	font-size: 20px;
+	display: inline-block;
+	padding: 30px 40px;
+	border-right: 1px solid #ccc;
+}
+.footer .aftermarket li:first-child {
+	background: url(../img/qitianwuliyou.png) 40px 22px no-repeat;
+}
+.footer .aftermarket li:nth-child(2) {
+	background: url(../img/15tian.png) 40px 22px no-repeat;
+}
+.footer .aftermarket li:nth-child(3) {
+	text-indent: 2.8em;
+	background: url(../img/zhengpin.png) 40px 22px no-repeat;
+}
+.footer .aftermarket li:last-child {
+	background: url(../img/shouhou.png) 40px 22px no-repeat;
+	border: none;
+}
+.footer .help {
+	position: relative;
+	padding: 20px 0 54px 30px;
+	font-size: 0;
+}
+.footer .help li {
+	width: 15.5%;
+	vertical-align: top;
+	display: inline-block;
+}
+.footer .help li div {
+	color: #333;
+	font-size: 18px;
+	line-height: 2.4;
+}
+.footer .help li p,
+.footer .help li p a {
+	line-height: 1.8;
+	font-size: 14px;
+	color: #666;
+}
+.footer .help li .phonenumber {
+	color: #fc3e3e;
+	padding-bottom:8px;
+	font-size: 18px;
+	line-height: 1;
+}
+.footer .help li p a:hover {
+	color: #FC3E3E;
+}
+.footer .qrcode {
+	font-size: 0;
+	position: absolute;
+	bottom: 2px;
+	right: 86px;
+}
+.footer .qrcode li{ 
+	vertical-align: top;
+	display: inline-block;
+	width: 88px;
+	height: 88px;
+}
+.footer .qrcode li:first-child {
+	margin-right: 15px;
+	background: url(../img/qrcode_kantuwang.png) no-repeat;
+}
+.footer .qrcode li:last-child {
+	background: url(../img/qrcode_kantuwangkaobei.png) no-repeat;
+}
+.footer .otherlink {
+	position: absolute;
+	bottom: 10px;
+	font-size: 0;
+}
+.footer .otherlink li:first-child {
+	vertical-align: top;
+	display: inline-block;
+	font-size: 18px;
+	color: #333;
+	width: 100px;
+}
+.footer .otherlink li:nth-child(2) {
+	margin-right: 40px;
+}
+.footer .otherlink li a {
+	display: block;
+	font-size: 18px;
+	width: 100px;
+	color: #666;
+}
+.footer .otherlink a:hover {
+	color: #fc3e3e;
+}
+.footer .copyright{
+	color: #fefefe;
+	font-size: 12px;
+	padding: 14px 0 8px 0;
+	background-color: rgb(102, 102, 102);
+}
+.footer .copyright .list{
+	width: 470px;
+	margin: 0 auto;
+}
+.footer .copyright a {
+	float: left;
+	color: #fefefe;
+	padding: 0 14px;
+	border-right: 1px solid #fefefe;
+}
+.footer .copyright .list a:hover {
+	color: #fc3e3e;
+}
+.footer .copyright .list a:first-child {
+	padding-right: 0;
+	padding-left: 0;
+}
+.footer .copyright .list a:last-child {
+	border: none;
+}
+.footer .copyright .record {
+	padding-top: 10px;
+	width: 580px;
+	margin: 0 auto;
+}
+.footer .etc {
+	color: #fefefe;
+	font-size: 12px;
+	padding: 8px 0;
+	background-color: rgb(51, 51, 51);
+}
+.footer .etc>div {
+	width: 636px;
+	margin: 0 auto;
+}
+.footer .etc .type {
+	width: 95px;
+	float: left;
+	margin-right: 32px;
+}
+.footer .etc .type:last-child {
+	margin: 0;
+}
+.footer .etc .type>img {
+	margin-right: 8px;
+	float: left;
+}

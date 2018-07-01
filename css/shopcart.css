@@ -1,0 +1,221 @@
+@charset "utf-8";
+/********************当前步骤*******************/
+/*.step {
+	padding: 10px 0 30px;
+}
+.step div {
+	background-color: #fff;
+	position: relative;
+	border:1px solid red;
+	height: 48px;
+}
+.step div div{
+	position: absolute;
+	width: 425px;
+	height: 48px;
+	float: left;
+	line-height: 48px;
+}*/
+/*.step div div .rank{
+	display: inline-block;
+	margin-left: 22px;
+}
+.step div div .stepinfo{
+	display: inline-block;
+	margin-left: 50px;
+}
+.step .step1 {
+	color: #fefefe;
+	background: url(../img/b.png) 42px 10px no-repeat, url(../img/矩形11.png) no-repeat;
+}
+.step .step2 {
+	left: 430px;
+	color: rgba(149, 149, 149, .7);
+	background: url(../img/a.png) 42px 10px no-repeat, url(../img/矩形11拷贝2.png) no-repeat;
+}
+.step .step3 {
+	left:840px;
+	color: rgba(149, 149, 149, .7);
+	background: url(../img/c.png) 42px 10px no-repeat, url(../img/矩形12.png) no-repeat;
+}*/
+
+
+/********************购物车区域*******************/
+.shopcartgoods menu {
+	border-radius: 8px 8px 0 8px;
+	width: 1280px;
+	font-size: 14px;
+	color: #757575;
+	background-color: #fff;
+}
+.shopcartgoods menu div {
+	box-sizing: border-box;
+	float: left;
+	line-height: 56px;
+	text-align: center;
+}
+.shopcartgoods menu ul {
+	clear: both;
+}
+.shopcartgoods menu .check {
+	width: 100px;
+}
+.shopcartgoods menu .check input{
+	vertical-align: middle;
+	margin-right: 6px;
+}
+.shopcartgoods menu .goodsinfo {
+	width: 580px;
+}
+.shopcartgoods menu .stock {
+	width: 100px;
+}
+.shopcartgoods menu .unitprice {
+	width: 150px;
+}
+.shopcartgoods menu .number {
+	width: 170px;
+}
+.shopcartgoods menu .operating {
+	width: 150px;
+}
+.shopcartgoods menu .goods div {
+	float: left;
+	line-height: 123px;
+}
+/*操作加入购物车的商品信息*/
+.shopcartgoods .goods {
+	clear: both;
+	border-top: 1px solid rgb(238, 238, 238);
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.shopcartgoods .goods .check input {
+	margin-left: -30px;
+	margin-right: 0;
+}
+.shopcartgoods .goods .goodsinfo {
+	text-align: left;
+}
+.shopcartgoods .goods .goodsinfo img {
+	vertical-align: middle;
+	margin-right: 15px;
+}
+.shopcartgoods .goods .goodsinfo a {
+	color: #757575;
+}
+.shopcartgoods .goods .goodsinfo a:hover {
+	text-decoration: underline;
+}
+.shopcartgoods .goods span {
+	line-height: 123px;
+	font-weight: bold;
+}
+.shopcartgoods .goods .number {
+	position: relative;
+	height: 123px;
+}
+.shopcartgoods .goods .number .cut,
+.shopcartgoods .goods .number .add {
+	box-sizing: border-box;
+	position: absolute;
+	top: 53px;
+	width: 20px;
+	height: 20px;
+	line-height: 18px;
+	text-align: center;
+	border: 1px solid rgb(238, 238, 238);
+}
+.shopcartgoods .goods .number .cut:hover,
+.shopcartgoods .goods .number .add:hover {
+	border: 1px solid rgb(200, 200, 200);
+	cursor: pointer;
+}
+.shopcartgoods .goods .number .cut {
+	left: 44px;
+}
+.shopcartgoods .goods .number .add {
+	right: 41px;
+}
+.shopcartgoods .goods .number .num {
+	line-height: 20px;
+	margin: 53px 0 0 64px;
+	width: 45px;
+	height: 20px;
+	border: 1px solid rgb(238, 238, 238);
+}
+.shopcartgoods .goods .operating ul {
+	height: 123px;
+}
+.shopcartgoods .goods .operating ul li {
+	height: 20px;
+	text-align: left;
+	text-indent: 3em;
+	line-height: 20px;
+}
+.shopcartgoods .goods .operating ul li:first-child {
+	padding-top: 42px;
+}
+.shopcartgoods .goods .operating ul li:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.shopcartgoods .delcheckgoods:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.shopcartgoods .showgoodsnum {
+	float: right;
+	margin-right: 100px;
+	color: #ff9381;
+}
+.shopcartgoods .showgoodsnum:before {
+	content: "已选商品";
+	color: #757575;
+	margin-right: 2px;
+}
+.shopcartgoods .showgoodsnum:after {
+	content: "件";
+	color: #757575;
+	margin-left: 2px;
+}
+.shopcartgoods .allprice {
+	float: right;
+	margin-right: -15px;
+}
+.shopcartgoods .allprice:before {
+	content: "总计：（不含运费）："
+}
+.shopcartgoods .allprice .price {
+	display: inline-block;
+	font-weight: bold;
+}
+.shopcartgoods .allprice .price:before {
+	font-weight: normal;
+}
+.shopcartgoods .pay {
+	float: right;
+	margin: 6px 40px 0 ;
+	font-size: 18px;
+	width: 100px;
+	line-height: 38px;
+	background-color: #ff9381;
+	border-radius: 8px;
+}
+.shopcartgoods .pay a {
+	display: block;
+	color: #fff;
+}
+.shopcartgoods .pay:hover {
+	background-color: #fe3c3c;
+}
+/************************猜你喜欢************************/
+.guessyoulike .goodsbox {
+	display:block;
+	width: 1280px;
+	height: 261px;
+	overflow:hidden;
+}
+.guessyoulike .goodsbox .goodscontent li {
+	display: inline-block;
+	padding-top: 10px;
+}

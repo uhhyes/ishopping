@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<!--告诉IE浏览器，IE8/9及以后的版本都会以最高版本IE来渲染页面。-->  
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="description" content="" >
+		<meta name="keywords" content="" >
+		<link href="favicon.ico" rel="shortcut icon">
+		<title>订单详情-爱购物商城</title>
+		<!--重置网页样式-->
+		<link href="lib/css/normalize.css" rel="stylesheet">
+		<!--引入公共样式-->
+		<link href="css/common.css" rel="stylesheet">
+		<!--引入网页头部css文件-->
+		<link href="css/header2.css" rel="stylesheet">
+		<!--引入网页主体内容css文件-->
+		<link  href="css/order.css" rel="stylesheet">
+		<!--引入网页底部css文件-->
+		<link href="css/footer.css" rel="stylesheet">
+		<!--引入jQuery v1.9.1版本文件-->
+		<!--<script src="https://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>-->
+		<script type="text/javascript" src="lib/jQuery/jquery.min.js" ></script>
+		<!--引入公共javascript文件-->
+		<script type="text/javascript" src="js/common.js" ></script>
+		<!--引入网页javascript文件-->
+		<script type="text/javascript" src="js/order.js" ></script>
+		<!--如果低于IE9版本，兼容html5-->
+		<!--[if lte IE 9]>
+			<script type="text/javascript" src="lib/html5shiv/html5shiv-printshiv.min.js" ></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--网页头部-->
+		<header class="header">
+			<!--个人信息-->
+			<div class="header1">
+				<div class="myinfo container clearfix">
+					<div class="address">
+						北京市、市辖区、东城区
+					</div>
+					<menu>
+						<a href="#">你好，请登录</a>
+						<a href="#">免费注册</a>
+						<a href="#">我的订单</a>
+						<a href="#">我的浏览</a>
+						<a href="#">我的收藏</a>
+						<a href="#">客户服务</a>
+						<a href="#">网站导航</a>
+					</menu>
+				</div>
+			</div>
+			<!--logo、搜索区域-->
+			<div class="header2 bgcolor">
+				<div class="mainsearch container clearfix">
+					<a class="logo"></a>
+					<div class="search">
+						<input type="text" placeholder="请输入关键字">
+						<span>搜索</span>
+						<ul class="searchhistory">
+							<li><a href="#">手机</a></li>
+							<li><a href="#">小米</a></li>
+							<li><a href="#">iphone</a></li>
+							<li><a href="#">三星</a></li>
+							<li><a href="#">华为</a></li>
+							<li><a href="#">冰箱</a></li>
+						</ul>
+					</div>
+					<a href="shopcart.html" class="shopcar">
+						我的购物车
+						<span>0</span>
+					</a>
+				</div>
+			</div>
+			<!--商品分类-->
+			<nav class="nav">
+				<ul class="types container">
+					<li>全部商品分类
+						<ul class="alltype">
+							<li class="type">家用电器
+								<ul class="homeelec shops">
+									<li>
+										<ul>
+											<li>智能电视</li>
+											<li>智能电视</li>
+											<li>智能电视</li>
+											<li>智能电视</li>
+											<li>智能电视</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>4K液晶电视</li>
+											<li>4K液晶电视</li>
+											<li>4K液晶电视</li>
+											<li>4K液晶电视</li>
+											<li>4K液晶电视</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>曲面屏电视</li>
+											<li>曲面屏电视</li>
+											<li>曲面屏电视</li>
+											<li>曲面屏电视</li>
+											<li>曲面屏电视</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>超薄电视</li>
+											<li>超薄电视</li>
+											<li>超薄电视</li>
+											<li>超薄电视</li>
+											<li>超薄电视</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>OLED电视</li>
+											<li>OLED电视</li>
+											<li>OLED电视</li>
+											<li>OLED电视</li>
+											<li>OLED电视</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>HDR电视</li>
+											<li>HDR电视</li>
+											<li>HDR电视</li>
+											<li>HDR电视</li>
+											<li>HDR电视</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="type">电脑
+								<ul class="pc shops">
+									<li>
+										<ul>
+											<li>笔记本</li>
+											<li>笔记本</li>
+											<li>笔记本</li>
+											<li>笔记本</li>
+											<li>笔记本</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>游戏本</li>
+											<li>游戏本</li>
+											<li>游戏本</li>
+											<li>游戏本</li>
+											<li>游戏本</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>平板电脑</li>
+											<li>平板电脑</li>
+											<li>平板电脑</li>
+											<li>平板电脑</li>
+											<li>平板电脑</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>一体机</li>
+											<li>一体机</li>
+											<li>一体机</li>
+											<li>一体机</li>
+											<li>一体机</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>台式机</li>
+											<li>台式机</li>
+											<li>台式机</li>
+											<li>台式机</li>
+											<li>台式机</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>电脑工具</li>
+											<li>电脑工具</li>
+											<li>电脑工具</li>
+											<li>电脑工具</li>
+											<li>电脑工具</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="type">家具
+								<ul class="furniture shops">
+									<li>
+										<ul>
+											<li>厨房配件</li>
+											<li>厨房配件</li>
+											<li>厨房配件</li>
+											<li>厨房配件</li>
+											<li>厨房配件</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>锅具套装</li>
+											<li>锅具套装</li>
+											<li>锅具套装</li>
+											<li>锅具套装</li>
+											<li>锅具套装</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>水具酒具</li>
+											<li>水具酒具</li>
+											<li>水具酒具</li>
+											<li>水具酒具</li>
+											<li>水具酒具</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>餐具</li>
+											<li>餐具</li>
+											<li>餐具</li>
+											<li>餐具</li>
+											<li>餐具</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>床品套件</li>
+											<li>床品套件</li>
+											<li>床品套件</li>
+											<li>床品套件</li>
+											<li>床品套件</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>收纳用品</li>
+											<li>收纳用品</li>
+											<li>收纳用品</li>
+											<li>收纳用品</li>
+											<li>收纳用品</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="type">服装
+								<ul class="clothing shops">
+									<li>
+										<ul>
+											<li>羽绒服</li>
+											<li>羽绒服</li>
+											<li>羽绒服</li>
+											<li>羽绒服</li>
+											<li>羽绒服</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>卫衣</li>
+											<li>卫衣</li>
+											<li>卫衣</li>
+											<li>卫衣</li>
+											<li>卫衣</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>连衣裙</li>
+											<li>连衣裙</li>
+											<li>连衣裙</li>
+											<li>连衣裙</li>
+											<li>连衣裙</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>休闲裤</li>
+											<li>休闲裤</li>
+											<li>休闲裤</li>
+											<li>休闲裤</li>
+											<li>休闲裤</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>打底衫</li>
+											<li>打底衫</li>
+											<li>打底衫</li>
+											<li>打底衫</li>
+											<li>打底衫</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>T恤</li>
+											<li>T恤</li>
+											<li>T恤</li>
+											<li>T恤</li>
+											<li>T恤</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="type">箱包
+								<ul class="box shops">
+									<li>
+										<ul>
+											<li>真皮包</li>
+											<li>真皮包</li>
+											<li>真皮包</li>
+											<li>真皮包</li>
+											<li>真皮包</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>手提包</li>
+											<li>手提包</li>
+											<li>手提包</li>
+											<li>手提包</li>
+											<li>手提包</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>旅行箱</li>
+											<li>旅行箱</li>
+											<li>旅行箱</li>
+											<li>旅行箱</li>
+											<li>旅行箱</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>商务公文包</li>
+											<li>商务公文包</li>
+											<li>商务公文包</li>
+											<li>商务公文包</li>
+											<li>商务公文包</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>拉杆包</li>
+											<li>拉杆包</li>
+											<li>拉杆包</li>
+											<li>拉杆包</li>
+											<li>拉杆包</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>相机包</li>
+											<li>相机包</li>
+											<li>相机包</li>
+											<li>相机包</li>
+											<li>相机包</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="type">个人化妆
+								<ul class="cosmetic shops">
+									<li>
+										<ul>
+											<li>补水保湿</li>
+											<li>补水保湿</li>
+											<li>补水保湿</li>
+											<li>补水保湿</li>
+											<li>补水保湿</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>卸妆</li>
+											<li>卸妆</li>
+											<li>卸妆</li>
+											<li>卸妆</li>
+											<li>卸妆</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>洁面</li>
+											<li>洁面</li>
+											<li>洁面</li>
+											<li>洁面</li>
+											<li>洁面</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>爽肤水</li>
+											<li>爽肤水</li>
+											<li>爽肤水</li>
+											<li>爽肤水</li>
+											<li>爽肤水</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>眼霜</li>
+											<li>眼霜</li>
+											<li>眼霜</li>
+											<li>眼霜</li>
+											<li>眼霜</li>
+										</ul>
+									</li>
+									<li>
+										<ul>
+											<li>精华</li>
+											<li>精华</li>
+											<li>精华</li>
+											<li>精华</li>
+											<li>精华</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="other active3"><a href="index.html">首页</a></li>
+					<li class="other"><a href="#">手机城</a></li>
+					<li class="other"><a href="#">珠宝</a></li>
+					<li class="other"><a href="#">家电城</a></li>
+					<li class="other"><a href="#">促销商品</a></li>
+					<li class="other"><a href="#">预售</a></li>
+					<li class="other"><a href="#">数码城</a></li>
+					<li class="other"><a href="#">团购</a></li>
+					<li class="other"><a href="#">积分商城</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--当前步骤-->
+		<div class="step bgcolor">
+			<div class="container clearfix">
+				<!--<div class="step1">
+					<span class="rank">1</span>
+					<span class="stepinfo">我的购物车</span>
+				</div>
+				<div class="step2">
+					<span class="rank">2</span>
+					<span class="stepinfo">填写订单</span>
+				</div>
+				<div class="step3">
+					<span class="rank">3</span>
+					<span class="stepinfo">订单支付</span>
+				</div>-->
+				<img src="img/step2.png">
+			</div>
+		</div>
+		<!--收货地址-->	
+		<div class="shippingaddress bgcolor">
+			<div class="container">
+				<div class="title clearfix">
+					<div class="info">新增收货人信息</div>
+					<div class="newaddress">新增收货地址</div>
+				</div>
+				<ul>
+					<li class="clearfix">
+						<div class="check"><img src="img/yuan.png"></div>
+						<div class="name content">苗翠花</div>
+						<div class="address content">重庆 重庆市 巴南区 渝鲁大道192号</div>
+						<div class="phonenumber content">15866661472</div>
+						<div class="edit">编辑</div>
+					</li>
+					<li class="clearfix">
+						<div class="check"><img src="img/yuan.png"></div>
+						<div class="name content">苗翠花</div>
+						<div class="address content">重庆 重庆市 巴南区 渝鲁大道192号</div>
+						<div class="phonenumber content">15866661472</div>
+						<div class="edit">编辑</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--发票信息-->
+		<div class="invoice bgcolor">
+			<div class='container'>
+				<div class="title clearfix">
+					<div class="info">发票信息</div>
+					<div class="remind">（请谨慎选择发票抬头，订单出库后不能更改）</div>
+				</div>
+				<div class="operating clearfix">
+					<div class="info">不开发票</div>
+					<div class="modify">修改</div>
+					<div class="tips">注意：</div>
+				</div>
+			</div>
+		</div>
+		<!--订单商品信息-->
+		<section class="ordergoods bgcolor">
+			<menu class="container clearfix">
+				<div class="tips">商品清单</div>
+				<div class="goodsinfo">商品信息</div>
+				<div class="stock">库存</div>
+				<div class="integral">积分</div>
+				<div class="number">数量</div>
+				<div class="unitprice">单价</div>
+				<ul class="goods clearfix">
+					<li>
+						<div class="goodsimg"><img src="img/goods_thumb_140_400_400kaobei2.png"></div>
+						<div class="goodsinfo clearfix"><a href="#">Apple iPhone 6s 16GB 玫瑰金色 移动联通电信4G手机</a></div>
+						<div class="stock">有货</div>
+						<div class="integral">299.90</div>
+						<div class="number">
+							<div class="num">1</div>
+						</div>
+						<div class="unitprice price">4858.00</div>
+					</li>
+					<li>
+						<div class="goodsimg"><img src="img/goods_thumb_140_400_400kaobei2.png"></div>
+						<div class="goodsinfo clearfix"><a href="#">Apple iPhone 6s 16GB 玫瑰金色 移动联通电信4G手机</a></div>
+						<div class="stock">有货</div>
+						<div class="integral">299.90</div>
+						<div class="number">
+							<div class="num">1</div>
+						</div>
+						<div class="unitprice price">4858.00</div>
+					</li>
+					<li>
+						<div class="goodsimg"><img src="img/goods_thumb_140_400_400kaobei2.png"></div>
+						<div class="goodsinfo clearfix"><a href="#">Apple iPhone 6s 16GB 玫瑰金色 移动联通电信4G手机</a></div>
+						<div class="stock">有货</div>
+						<div class="integral">299.90</div>
+						<div class="number">
+							<div class="num">1</div>
+						</div>
+						<div class="unitprice price">4858.00</div>
+					</li>
+				</ul>
+				<ul class="write">
+					<li>
+						<div class="title">使用优惠券 </div>
+						<input type="text">
+						<div class="use">使用</div>
+						<div class="discount">查看优惠券编号</div>
+						<div class="discountprice">0.00</div>
+					</li>
+					<p>注：每笔订单限是使用一张优惠券，不可多张混核使用，线下券兑换后如果不符合当前订单条件将不能使用。</p>
+					<li>
+						<div class="title">选择物流 </div>
+						<select>
+							<option>申通物流</option>
+							<option>韵达物流</option>
+							<option>圆通物流</option>
+							<option>中通物流</option>
+							<option>顺丰物流</option>
+							<option>天天快递</option>
+							<option>邮政EMS</option>
+						</select>
+						<div class="payprice">0.00</div>
+					</li>
+					<li>
+						<div class="title msg">给卖家留言</div>
+						<input type="text" class="msg" placeholder="限50字（请勿填写有关支付，收货，发票方面的信息）">
+					</li>
+				</ul>
+				<ul class="payinfo">
+					<li>
+						<div class="title">余额支付 </div>
+						<input type="password" placeholder="请输入使用余额">
+						<div class="use">使用</div>
+						<div class="balance">0.00</div>
+					</li>
+					<li>
+						<div class="title">积分支付 </div>
+						<input type="password" placeholder="请输入积分">
+						<div class="use">使用</div>
+						<div class="">1积分抵1元</div>
+						<div class="integral">100</div>
+					</li>
+					<li>
+						<div class="title">支付密码 </div>
+						<input type="password" placeholder="请输入密码">
+						<div class="setpaypwd">设置支付密码</div>
+					</li>
+				</ul>
+				<div class="prices">
+					<ul>
+						<li class="totalprice value">5998.00<li>
+						<li class="discountprice value">0.00</li>
+						<li class="roadprice value">0.00</li>
+						<li class="balance value">0.00</li>
+						<li class="integral value">0.00</li>
+					</ul>
+					<ul>
+						<li><span class="goodsnum">2</span>件商品，总金额：</li>
+						<li>使用优惠券：</li>
+						<li>运费：</li>
+						<li>使用余额：</li>
+						<li>使用积分：</li>
+					</ul>
+				</div>
+				<div class="ok">
+					<div class="submit"><a href="pay.html">提交订单</a></div>
+					<div class="price">5998.00</div>
+					<div class="tips">应付总额：</div>
+					<div class="info">
+						<div class="phonenumber">158****1472</div>
+						<div class="name">苗翠华</div>
+						<div class="address">重庆 重庆市 巴南区 渝鲁大道192号</p>
+					</div>
+				</div>
+			</menu>
+		</section>
+		<!--网页底部-->
+		<footer class="footer">
+			<!--售后保证-->
+			<div class="container">
+				<ul class="aftermarket">
+					<li>7天无理由退货</li>
+					<li>15天免费换货</li>
+					<li>正品行货 品质保证</li>
+					<li>专业售后服务</li>
+				</ul>
+			</div>
+			<!--帮助指南-->
+			<div class="container">
+				<ul class="help">
+					<li>
+						<div>新手上路</div>
+						<p><a href="#">新用户注册</a></p>
+						<p><a href="#">积分细则</a></p>
+						<p><a href="#">忘记密码</a></p>
+						<p><a href="#">如何搜索</a></p>
+						<p><a href="#">积分兑换规则</a></p>
+					</li>
+					<li>
+						<div>购物指南</div>
+						<p><a href="#">会员修改密码</a></p>
+						<p><a href="#">修改个人资料</a></p>
+						<p><a href="#">会员等级</a></p>
+						<p><a href="#">常见问题</a></p>
+						<p><a href="#">修改收货地址</a></p>
+					</li>
+					<li>
+						<div>售后服务</div>
+						<p><a href="#">售后政策</a></p>
+						<p><a href="#">退换货流程</a></p>
+						<p><a href="#">退款说明</a></p>
+						<p><a href="#">取消订单</a></p>
+					</li>
+					<li>
+						<div>支付方式</div>
+						<p><a href="#">银联支付</a></p>
+						<p><a href="#">支付宝支付</a></p>
+						<p><a href="#">微信支付</a></p>
+						<p><a href="#">余额支付</a></p>
+						<p><a href="#">分期付款</a></p>
+					</li>
+					<li>
+						<div>配送方式</div>
+						<p><a href="#">免运费政策</a></p>
+						<p><a href="#">物流查询</a></p>
+						<p><a href="#">上门自提</a></p>
+						<p><a href="#">配送服务承诺</a></p>
+					</li>
+					<li>
+						<div>联系我们</div>
+						<p class="phonenumber">02368771009</p>
+						<p>周一至周日8：00-18：00</p>
+						<p>仅收市话费</p>
+					</li>
+					<ul class="qrcode">
+						<li></li>
+						<li></li>
+					</ul>
+					<ul class="otherlink">
+						<li>友情链接:</li>
+						<li><a href="#">京东</a></li>
+						<li><a href="#">天猫</a></li>
+					</ul>
+				</ul>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<div class="list clearfix">
+						<a href="#">关于我们</a>
+						<a href="#">联系我们</a>
+						<a href="#">免运费政策</a>
+						<a href="#">物流查询</a>
+						<a href="#">上门自提</a>
+						<a href="#">配送服务承诺</a>
+					</div>
+					<div class="record">
+						<p>Copyright&copy;2015-2017重庆马泽福电子商务有限公司 版权所有 保留一切权利 备案号:渝ICP备1701927号-2</p>
+					</div>
+				</div>
+			</div>
+			<div class="etc clearfix">
+				<div class="container clearfix">
+					<div class="type">
+						<img src="img/tuceng10.png">
+						<p>经营型网站</p>
+						<p>备案信息</p>
+					</div>
+					<div class="type">
+						<img src="img/tuceng11.png">
+						<p>可信网站</p>
+						<p>信用评价</p>
+					</div>
+					<div class="type">
+						<img src="img/tuceng12.png">
+						<p>网络警察</p>
+						<p>提醒您</p>
+					</div>
+					<div class="type">
+						<img src="img/tuceng13.png">
+						<p>诚信网站</p>
+					</div>
+					<div class="type">
+						<img src="img/tuceng14.png">
+						<p>中国互联网</p>
+						<p>举报中心</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

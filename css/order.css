@@ -1,0 +1,435 @@
+@charset "utf-8";
+/********************当前步骤*******************/
+/*.step {
+	padding: 10px 0 30px;
+	background-color: rgb(238, 238, 238);
+}
+.step div {
+	background-color: #fff;
+	position: relative;
+	height: 48px;
+}
+.step div div{
+	position: absolute;
+	width: 425px;
+	height: 48px;
+	float: left;
+	line-height: 48px;
+}*/
+
+/********************选择收货地址*******************/
+.shippingaddress {
+	font-size: 14px;
+	color: #5c5c5c;
+	padding-bottom: 20px;
+}
+.shippingaddress>div {
+	border-radius: 8px 8px 0 0;
+	background-color: #fff;
+}
+.shippingaddress>div>div,
+.shippingaddress>div>ul>li {
+	border-bottom: 1px solid rgb(238, 238, 238);
+	padding: 20px 0;
+}
+.shippingaddress .title .info {
+	float: left;
+	width: 100px;
+	margin-left: 20px;
+}
+.shippingaddress .title .newaddress {
+	display: block;
+	float: right;
+	width: 100px;
+	color: #005ea7;
+	margin-right: 10px;
+}
+.shippingaddress a:hover {
+	text-decoration: underline;
+}
+.shippingaddress .check,
+.shippingaddress .name,
+.shippingaddress .address,
+.shippingaddress .phonenumber {
+	float: left;
+	margin-right: 12px;
+}
+.shippingaddress .check {
+	position: relative;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	border: 1px solid rgb(255, 147, 129);
+	padding: 2px;
+	margin-left: 44px;
+}
+.shippingaddress .check:hover {
+	cursor: pointer;
+}
+.shippingaddress .check img {
+	position: absolute;
+	top: 2px;
+}
+.shippingaddress li:last-of-type .check img{
+	display: none;
+}
+
+.shippingaddress .edit {
+	float: right;
+	margin-right: 60px;
+	color: #005ea7;
+}
+.shippingaddress .title .newaddress:hover,
+.shippingaddress .edit:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/*********************发票详情*******************/
+.invoice {
+	padding-bottom: 30px;
+}
+.invoice>div {
+	border-radius: 8px 8px 0 0;
+	background-color: #fff;	
+	font-size: 14px;
+	line-height: 53px;
+	color: #5c5c5c;
+}
+.invoice .title {
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.invoice .title .info {
+	float: left;
+	margin-left: 20px;
+}
+.invoice .title .remind {
+	color: #ccc;
+}
+.invoice .operating .info {
+	float: left;
+	color: #5c5c5c;
+	margin-left: 42px;
+}
+.invoice .operating .modify {
+	float: left;
+	color: #005ea7;
+	margin-left: 16px;
+}
+.invoice .operating .modify:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+.invoice .tips {
+	padding: 0 0 20px 20px;
+	line-height: 1.6;
+	clear: both;
+	color: #969696;
+	width: 100%;
+}
+.invoice .tips:after {
+	content: "如果商品由第三方卖家销售,发票内容由其卖家决定,发票由卖家开具并寄出";
+	color: #ff9381;
+}
+/********************订单详情区域*******************/
+.ordergoods {
+	padding-bottom:30px;
+}
+.ordergoods menu {
+	border-radius: 8px 8px 0 8px;
+	width: 1280px;
+	font-size: 14px;
+	color: #757575;
+	background-color: #fff;
+}
+.ordergoods menu div {
+	box-sizing: border-box;
+	float: left;
+	line-height: 56px;
+	text-align: center;
+}
+/*商品图片*/
+.ordergoods .goods .goodsimg,
+.ordergoods menu .tips {
+	width: 100px;
+	margin-left: 20px;
+}
+/*商品信息*/
+.ordergoods .goods .goodsinfo,
+.ordergoods menu .goodsinfo {
+	width: 580px;
+}
+/*库存*/
+.ordergoods .goods .stock,
+.ordergoods menu .stock {
+	width: 100px;
+}
+/*积分*/
+.ordergoods .goods .integral,
+.ordergoods menu .integral {
+	width: 150px;
+}
+/*数量*/
+.ordergoods .goods .number,
+.ordergoods menu .number {
+	width: 170px;
+}
+/*单价*/
+.ordergoods .goods .unitprice,
+.ordergoods menu .unitprice {
+	width: 150px;
+}
+.ordergoods menu .goods div {
+	float: left;
+}
+/*操作加入购物车的商品信息*/
+.ordergoods .goods {
+	clear: both;
+	border-top: 1px solid rgb(238, 238, 238);
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.ordergoods .goods li{
+	clear: both;
+	height: 100px;
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.ordergoods .goods .goodsimg {
+	padding: 2px;
+	width: 52px;
+	height: 52px;
+	margin: 24px 0 0 44px;
+}
+.ordergoods .goods .goodsimg:hover {
+	box-shadow: 0 0 2px #789;
+	cursor: pointer;
+}
+.ordergoods .goods .goodsimg img {
+	width: 100%;
+	height: 100%;
+}
+.ordergoods .goods .goodsinfo {
+	margin-left: 24px;
+	padding: 0 40px 0 100px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+.ordergoods .goods .goodsinfo a {
+	color: #757575;
+}
+.ordergoods .goods .goodsinfo a:hover {
+	text-decoration: underline;
+}
+.ordergoods .goods .unitprice {
+	font-weight: bold;
+}
+.ordergoods .goods .number .num {
+	width: 100%;
+}
+.ordergoods .goods .goodsinfo,
+.ordergoods .goods .stock,
+.ordergoods .goods .integral,
+.ordergoods .goods .unitprice,
+.ordergoods .goods .number .num {
+	line-height: 100px;
+}
+/***********填写优惠***********/
+.ordergoods .write,
+.ordergoods .payinfo {
+	border-bottom: 1px solid rgb(238, 238, 238);
+	padding: 28px 48px 28px 60px;
+}
+.ordergoods .write div,
+.ordergoods .write input,
+.ordergoods .write select,
+.ordergoods .payinfo div,
+.ordergoods .payinfo input{
+	height:27px;
+	line-height: 27px;
+	float: left;
+}
+.ordergoods .write input,
+.ordergoods .write select,
+.ordergoods .payinfo input{
+	padding-left: 6px;
+}
+.ordergoods .write {
+	font-size: 14px;
+	color: #878686;
+}
+.ordergoods .write li,
+.ordergoods .payinfo li {
+	width: 100%;
+	display: inline-block;
+	margin-top: 10px;
+}
+.ordergoods .write .title,
+.ordergoods .payinfo .title {
+	width: 75px;
+	text-align: left;
+	margin-right: 10px;
+	clear: both;
+}
+.ordergoods .write input,
+.ordergoods .payinfo input {
+	width: 136px;
+	height: 21px;
+	outline: none;
+	margin-right: 10px;
+}
+.ordergoods .write .use,
+.ordergoods .payinfo .use {
+	width: 56px;
+	color: #fff;
+	background-color: #ff9381;
+	margin-right: 10px;
+}
+.ordergoods .write .use:hover,
+.ordergoods .payinfo .use:hover {
+	color: #fff;
+	cursor: pointer;
+	background-color: #fe3c3c;
+}
+.ordergoods .write .discount {
+	color: #ff9381;
+}
+.ordergoods .write .discount:hover {
+	cursor: pointer;
+	color: #fe3c3c;
+}
+.ordergoods .write .discount:before {
+	content: "点击";
+	color: #878686;
+}
+.ordergoods .write .discount:after {
+	content: "，输入编号可抵用";
+	color: #878686;
+}
+.ordergoods .write .discountprice,
+.ordergoods .write .payprice {
+	float: right;
+}
+.ordergoods .write .discountprice:before {
+	content: "-￥";
+}
+.ordergoods .write .payprice:before {
+	content: "￥";
+}
+.ordergoods .write p {
+	clear: both;
+	line-height: 1.8;
+}
+.ordergoods .write select {
+	color: #878686;
+}
+.ordergoods .write input.msg {
+	width: 800px;
+}
+
+/***************支付密码************/
+.ordergoods .payinfo input {
+	width: 200px;
+}
+.ordergoods .payinfo .use {
+	background-color: #fff;
+	color: #ccc;
+	border: 1px solid #ccc;
+}
+.ordergoods .payinfo .balance:before {
+	content: "您的可用余额 ￥ ";
+}
+.ordergoods .payinfo .integral:before {
+	content: "您的可用积分";
+}
+.ordergoods .payinfo .integral:after {
+	content: "分";
+}
+.ordergoods .payinfo .setpaypwd {
+	color: #ff9381;
+}
+.ordergoods .payinfo .setpaypwd:before {
+	content: "请先";
+	color: #878686;
+}
+.ordergoods .payinfo .setpaypwd:hover {
+	color: #fe3c3c;
+	cursor: pointer;
+}
+.ordergoods .prices {
+	width: 100%;
+	padding: 20px 48px 0;
+	border-bottom: 1px solid rgb(238, 238, 238);
+}
+.ordergoods .prices ul {
+	text-align: right;
+	float: right;
+	line-height: 1.8;
+}
+.ordergoods .prices ul li{
+	width: auto;
+}
+.ordergoods .prices ul li.value:before {
+	content: "￥";
+}
+.ordergoods .prices ul li.discountprice:before {
+	content: "-￥";
+}
+/*准备支付*/
+.ordergoods .ok {
+	padding: 20px 48px 24px 0;
+	width: 100%;
+}
+.ordergoods .ok div {
+	float: right;
+}
+.ordergoods .ok .submit {
+	width: 178px;
+	height: 42px;
+	text-align: center;
+	font-size: 24px;
+	background-color: #ff9381;;
+	color: #fffffe;
+	border-radius: 8px;
+}
+.ordergoods .ok .submit:hover {
+	cursor: pointer;
+	background-color: #fe3c3c;
+}
+.ordergoods .ok .price {
+	font-size: 24px;
+	font-weight: bold;
+	color: #ff9381;
+	margin-right: 20px;
+}
+.ordergoods .ok .price:before {
+	font-size: 16px;
+}
+.ordergoods .ok .price,
+.ordergoods .ok .submit{
+	line-height: 42px;
+}
+.ordergoods .ok .submit a{
+	display: block;
+	color: #fff;
+}
+.ordergoods .ok .tips {
+	margin-right: -10px;
+}
+.ordergoods .ok .info {
+	color: #ccc;
+	width: 100%;
+}
+.ordergoods .ok .info div{
+	line-height: 0.5;
+	float: right;
+}
+.ordergoods .ok .info .name {
+	margin-right: 10px;
+}
+.ordergoods .ok .info .name:before {
+	content: "收货人：";
+}
+.ordergoods .ok .info .address {
+	margin-right: 50px;
+}
